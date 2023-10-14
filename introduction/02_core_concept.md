@@ -37,7 +37,8 @@ the tools or plugin which will be used in this section:
 - document is the concept of a **container** in LLaMAIndex. It **can contain any data source**, such as database, txt or APIs. 
 - the smallest part of documents is called **Nodes**, which represent the **chunk(分块)**of the document. Node also **contains** the **metadata(元数据) and the relationships** between other nodes or APIs.
 
-![1697189723784](C:\Users\QUAN\Documents\WeChat Files\wxid_huobapv11fgp21\FileStorage\Temp\1697189723784.png)
+![1697189723784](https://github.com/xinyun2000/Skills/assets/130521370/b0add7d7-fdd5-447e-97c0-1e76f3365a2f)
+
 #### Data Indexes
 
 - convenient tool provided by LLaMAIndex, help users to build indexes for knowledge base. let the index become easy and efficient.
@@ -51,7 +52,7 @@ the tools or plugin which will be used in this section:
 - During the query section, the RAG pipeline **find the most relevant context** based on the user query and **passes it along with the query to LLM** to synthesize a response. 
 - This enables LLM to obtain up-to-date knowledge that was not in its original training data, while also reducing fake content. The **key challenges** in this section are **finding, arranging and reasoning** based on the knowledge base.
 
-![f355aec24b9a0cf80e6b11eaca4d965](C:\Users\QUAN\Documents\WeChat Files\wxid_huobapv11fgp21\FileStorage\Temp\f355aec24b9a0cf80e6b11eaca4d965.jpg)
+![f355aec24b9a0cf80e6b11eaca4d965](https://github.com/xinyun2000/Skills/assets/130521370/aae45cfe-1488-4349-83ee-b3d840a55b54)
 
 - LLaMAIndex provide **composable(可组合的) module** to help users **build and integrated(集成) RAG pipeline** to use as an chatbot or a part of agent.
 - these module can be customized by ranking preference and be mixed up to reason in the structured mode. 
