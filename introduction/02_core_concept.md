@@ -1,6 +1,6 @@
-## Core Concept
+## Core Concepts
 
-LLaMAIndex helps to build application based on personal or private data driven by LLM. 
+LLaMAIndex helps to build applications based on personal or private data driven by LLM. 
 
 **RAG(Retrieval Augmented Generation)** is the core concept for LLaMAIndex.
 
@@ -8,7 +8,7 @@ LLaMAIndex helps to build application based on personal or private data driven b
 
 RAG, also called **Search Generation Enhancement.** It is a paradigm for enhancing LLM with personal or private data.
 
-RAG contains two section:
+RAG contains two sections:
 
 1. Index(索引)
 
@@ -16,9 +16,9 @@ RAG contains two section:
 
 2. Query(查询)
 
-   query the in-context information from the knowledge base, help LLM to answer the questions. 
+   query the in-context information from the knowledge base, and help LLM to answer the questions. 
 
-LLaMAIndex provides various tools to help users finish these two section conveniently.
+LLaMAIndex provides various tools to help users finish these two sections conveniently.
 
 
 
@@ -26,7 +26,7 @@ LLaMAIndex provides various tools to help users finish these two section conveni
 
 LLaMAIndex helps users build the knowledge base by providing Data connection(数据连接器) and indexes(索引) 
 
-the tools or plugin which will be used in this section:
+the tools or plugins which will be used in this section:
 
 #### Data connection
 
@@ -41,7 +41,7 @@ the tools or plugin which will be used in this section:
 
 #### Data Indexes
 
-- convenient tool provided by LLaMAIndex, help users to build indexes for knowledge base. let the index become easy and efficient.
+- convenient tool provided by LLaMAIndex, helps users to build indexes for the knowledge base. let the index become easy and efficient.
 
 - usually use index: ***VectorStoreIndex*** 
 
@@ -49,13 +49,13 @@ the tools or plugin which will be used in this section:
 
 ### Query Section
 
-- During the query section, the RAG pipeline **find the most relevant context** based on the user query and **passes it along with the query to LLM** to synthesize a response. 
+- During the query section, the RAG pipeline **finds the most relevant context** based on the user query and **passes it along with the query to LLM** to synthesize a response. 
 - This enables LLM to obtain up-to-date knowledge that was not in its original training data, while also reducing fake content. The **key challenges** in this section are **finding, arranging and reasoning** based on the knowledge base.
 
 ![f355aec24b9a0cf80e6b11eaca4d965](https://github.com/xinyun2000/Skills/assets/130521370/aae45cfe-1488-4349-83ee-b3d840a55b54)
 
-- LLaMAIndex provide **composable(可组合的) module** to help users **build and integrated(集成) RAG pipeline** to use as an chatbot or a part of agent.
-- these module can be customized by ranking preference and be mixed up to reason in the structured mode. 
+- LLaMAIndex provides **composable(可组合的) module** to help users **build and integrate (集成) RAG pipeline** to use as a chatbot or a part of the agent.
+- this module can be customized by ranking preference and be mixed up to reason in the structured mode. 
 
 #### module in this section:
 
@@ -71,7 +71,7 @@ the tools or plugin which will be used in this section:
 
    > 响应合成器。 It leverages LLM to generate a response based on the user's query, and a set of retrieved text chunks (forming the context).
    >
-   > always be used in chat
+   > Always be used in chat
 
 不同管道但构建器是相似的，都会基于检索器来检索知识库中的内容数据得到文本分块，也就是相关的上下文，然后基于节点和后处理器对数据对文本进行过滤转换排名，并由大语言模型来生成合成响应，再将响应供给给不同的管道。
 
@@ -81,13 +81,13 @@ the tools or plugin which will be used in this section:
 
    > end-to-end
    >
-   > Allow users ask the question by using natural language, which can get the answer and relevant context.
+   > Allow users to ask the question by using natural language, which can get the answer and relevant context.
 
 2. Chat Engines
 
    > end-to-end
    >
-   > allow user to chat based on knowledge base.
+   > allow users to chat based on knowledge base.
 
 3. Agents
 
